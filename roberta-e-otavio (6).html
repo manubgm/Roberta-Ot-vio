@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roberta &amp; Otávio | 20 de Novembro de 2026</title>
+<meta name="description" content="Roberta e Otávio vão se casar em 20 de novembro de 2026, no Espaço Seribeli, em Presidente Prudente - SP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#FBF8F2;
+    --paper:#F4EEE2;
+    --champagne:#E3D3AE;
+    --taupe:#9C8968;
+    --olive:#5C5B3E;
+    --coffee:#4A3527;
+    --ink:#2A241E;
+    --ink-soft:#5A5148;
+    --serenity:#AECBDB;
+    --line: rgba(74,53,39,0.16);
+    --line-strong: rgba(74,53,39,0.30);
+    --serif: 'Cormorant Garamond', 'Times New Roman', serif;
+    --sans: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+    --max: 1180px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-weight:300;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering:optimizeLegibility;
+    -webkit-text-size-adjust:100%;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  button{font-family:inherit;cursor:pointer;}
+  ::selection{background:var(--champagne);color:var(--coffee);}
+
+  h1,h2,h3,h4{
+    font-family:var(--serif);
+    font-weight:500;
+    margin:0;
+    color:var(--coffee);
+  }
+
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 32px;}
+
+  .rule{
+    width:56px;height:1px;background:var(--taupe);margin:22px auto;
+  }
+  .rule.left{margin-left:0;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important;transition:none !important;}
+    html{scroll-behavior:auto;}
+  }
+
+  /* ---------- reveal on scroll ---------- */
+  .reveal{
+    opacity:0;
+    transform:translateY(22px);
+    transition:opacity 1s ease, transform 1s ease;
+  }
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  /* ---------- NAV ---------- */
+  header.site-nav{
+    position:fixed;top:0;left:0;right:0;z-index:1000;
+    padding:26px 0;
+    transition:padding .5s ease, background .5s ease, box-shadow .5s ease;
+  }
+  header.site-nav .wrap{display:flex;align-items:center;justify-content:space-between;}
+  header.site-nav.solid{
+    background:rgba(251,248,242,0.94);
+    backdrop-filter:blur(6px);
+    padding:14px 0;
+    box-shadow:0 1px 0 var(--line);
+  }
+  .nav-mark{
+    font-family:var(--serif);
+    font-size:1.45rem;
+    letter-spacing:.04em;
+    color:var(--ivory);
+    transition:color .5s ease;
+  }
+  header.site-nav.solid .nav-mark{color:var(--coffee);}
+  .nav-links{display:flex;gap:34px;list-style:none;margin:0;padding:0;}
+  .nav-links a{
+    font-size:.82rem;
+    letter-spacing:.03em;
+    color:var(--ivory);
+    padding-bottom:4px;
+    border-bottom:1px solid transparent;
+    transition:color .5s ease, border-color .3s ease;
+  }
+  header.site-nav.solid .nav-links a{color:var(--ink-soft);}
+  .nav-links a:hover{border-color:currentColor;}
+  .nav-cta{
+    font-size:.8rem;
+    border:1px solid var(--ivory);
+    padding:9px 20px;
+    color:var(--ivory);
+    transition:all .4s ease;
+    white-space:nowrap;
+  }
+  header.site-nav.solid .nav-cta{border-color:var(--coffee);color:var(--coffee);}
+  .nav-cta:hover{background:var(--ivory);color:var(--coffee);}
+  header.site-nav.solid .nav-cta:hover{background:var(--coffee);color:var(--ivory);}
+
+  .burger{
+    display:none;flex-direction:column;gap:5px;background:none;border:none;padding:6px;
+  }
+  .burger span{width:24px;height:1px;background:var(--ivory);transition:background .4s ease;}
+  header.site-nav.solid .burger span{background:var(--coffee);}
+
+  .mobile-menu{
+    position:fixed;inset:0;background:var(--ivory);z-index:1100;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;
+    transform:translateY(-100%);transition:transform .55s cubic-bezier(.77,0,.18,1);
+  }
+  .mobile-menu.open{transform:translateY(0);}
+  .mobile-menu a{font-family:var(--serif);font-size:1.5rem;color:var(--coffee);}
+  .mobile-close{position:absolute;top:26px;right:32px;background:none;border:none;font-size:1.6rem;color:var(--coffee);}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;
+    text-align:center;color:var(--ivory);overflow:hidden;
+  }
+  .hero-bg{
+    position:absolute;inset:0;
+    background-image:linear-gradient(180deg, rgba(30,24,18,.38), rgba(30,24,18,.62)),
+      url('https://cdn-assets-legacy.casar.com/thumb/autoxautox1xx0,0,1280,720/dados/sitenoivos/wed1568963/sliders/gA7Zn_1786989983.jpeg');
+    background-size:cover;background-position:center;
+    transform:scale(1.015);
+  }
+  .hero-content{position:relative;z-index:2;padding:0 24px;}
+  .hero-eyebrow{
+    font-size:.78rem;letter-spacing:.32em;font-weight:400;margin-bottom:26px;opacity:.9;
+  }
+  .hero-names{
+    font-family:var(--serif);
+    font-size:clamp(3rem, 9vw, 6.4rem);
+    line-height:1.05;
+    font-weight:400;
+    letter-spacing:.01em;
+  }
+  .hero-amp{
+    display:block;font-style:italic;font-size:.55em;margin:6px 0;color:var(--champagne);
+  }
+  .hero-date{
+    margin-top:28px;font-size:1.1rem;letter-spacing:.38em;font-weight:400;
+  }
+  .hero-quote{
+    margin-top:30px;font-family:var(--serif);font-style:italic;font-size:1.2rem;
+    max-width:480px;margin-left:auto;margin-right:auto;color:rgba(251,248,242,.92);
+  }
+  .hero-scroll{
+    position:absolute;bottom:36px;left:50%;transform:translateX(-50%);z-index:2;
+    display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--ivory);opacity:.85;
+  }
+  .hero-scroll .line{width:1px;height:44px;background:currentColor;animation:scrollLine 2.2s ease-in-out infinite;}
+  @keyframes scrollLine{
+    0%{transform:scaleY(0);transform-origin:top;}
+    50%{transform:scaleY(1);transform-origin:top;}
+    50.01%{transform-origin:bottom;}
+    100%{transform:scaleY(0);transform-origin:bottom;}
+  }
+
+  /* ---------- COUNTDOWN ---------- */
+  .countdown-strip{
+    background:var(--paper);
+    padding:52px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .countdown-grid{
+    display:flex;justify-content:center;gap:clamp(18px,5vw,64px);flex-wrap:wrap;text-align:center;
+  }
+  .countdown-item{min-width:76px;}
+  .countdown-num{
+    font-family:var(--serif);font-size:clamp(2.1rem,5vw,3.1rem);color:var(--coffee);font-weight:500;
+  }
+  .countdown-label{
+    font-size:.68rem;letter-spacing:.2em;color:var(--ink-soft);margin-top:6px;
+  }
+  .countdown-sep{
+    font-family:var(--serif);font-size:2rem;color:var(--champagne);align-self:center;
+  }
+
+  /* ---------- SECTION generic ---------- */
+  section{padding:118px 0;}
+  .section-head{text-align:center;max-width:640px;margin:0 auto 64px;}
+  .section-head h2{font-size:clamp(2.1rem,4vw,2.9rem);font-weight:500;}
+  .section-head p{margin-top:16px;color:var(--ink-soft);font-size:1.02rem;}
+  .section-date{
+    font-size:.72rem;letter-spacing:.3em;color:var(--taupe);margin-bottom:10px;
+  }
+
+  section.alt{background:var(--paper);}
+
+  /* ---------- STORY ---------- */
+  .story-grid{
+    display:grid;grid-template-columns:0.85fr 1.15fr;gap:70px;align-items:center;
+  }
+  .story-photo{position:relative;}
+  .story-photo img{width:100%;height:560px;object-fit:cover;filter:contrast(1.04);}
+  .story-photo::after{
+    content:'';position:absolute;top:22px;left:22px;right:-22px;bottom:-22px;
+    border:1px solid var(--taupe);z-index:-1;
+  }
+  .story-text .kicker{font-size:.72rem;letter-spacing:.3em;color:var(--taupe);margin-bottom:18px;}
+  .story-text h2{font-size:clamp(2rem,4vw,2.7rem);margin-bottom:26px;}
+  .story-text p{color:var(--ink-soft);font-size:1.05rem;margin-bottom:18px;}
+  .story-text p:first-of-type::first-letter{
+    font-family:var(--serif);font-size:3.4rem;line-height:.7;float:left;padding:8px 10px 0 0;color:var(--coffee);
+  }
+  .story-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:38px;}
+  .story-strip img{height:150px;width:100%;object-fit:cover;filter:contrast(1.03);}
+
+  /* ---------- CEREMONY / RECEPTION ---------- */
+  .split{
+    display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;
+    border:1px solid var(--line);
+  }
+  .split-media{position:relative;min-height:480px;}
+  .split-media img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;filter:contrast(1.03);}
+  .split-body{padding:64px 60px;display:flex;flex-direction:column;justify-content:center;}
+  .split.reverse{direction:rtl;}
+  .split.reverse .split-body{direction:ltr;}
+  .split-body .kicker{font-size:.72rem;letter-spacing:.3em;color:var(--taupe);margin-bottom:16px;}
+  .split-body h2{font-size:clamp(1.9rem,3.4vw,2.5rem);margin-bottom:22px;}
+  .split-body p{color:var(--ink-soft);margin-bottom:16px;}
+  .info-block{
+    margin-top:28px;padding-top:26px;border-top:1px solid var(--line);
+    display:grid;gap:14px;
+  }
+  .info-row{display:flex;gap:16px;align-items:baseline;}
+  .info-row .k{font-size:.72rem;letter-spacing:.16em;color:var(--taupe);min-width:78px;}
+  .info-row .v{font-family:var(--serif);font-size:1.25rem;color:var(--coffee);}
+  .btn{
+    display:inline-block;margin-top:30px;padding:14px 34px;border:1px solid var(--coffee);
+    font-size:.78rem;letter-spacing:.16em;color:var(--coffee);transition:all .35s ease;align-self:flex-start;
+  }
+  .btn:hover{background:var(--coffee);color:var(--ivory);}
+  .btn.solid{background:var(--coffee);color:var(--ivory);}
+  .btn.solid:hover{background:var(--olive);border-color:var(--olive);}
+
+  .map-embed{margin-top:0;border-top:1px solid var(--line);}
+  .map-embed iframe{width:100%;height:340px;border:0;filter:grayscale(.1) sepia(.03);display:block;}
+
+  /* ---------- GUEST MANUAL ---------- */
+  .manual-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);
+    border:1px solid var(--line);
+  }
+  .manual-card{
+    background:var(--ivory);padding:44px 34px;text-align:center;
+  }
+  .manual-card svg{width:30px;height:30px;stroke:var(--olive);margin-bottom:20px;}
+  .manual-card h3{font-size:1.18rem;margin-bottom:10px;font-weight:500;}
+  .manual-card p{font-size:.92rem;color:var(--ink-soft);}
+
+  /* ---------- DRESS CODE ---------- */
+  .dress{
+    display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;
+  }
+  .dress-photo img{width:100%;height:560px;object-fit:cover;filter:contrast(1.03);}
+  .dress-body .kicker{font-size:.72rem;letter-spacing:.3em;color:var(--taupe);margin-bottom:16px;}
+  .dress-body h2{font-size:clamp(2rem,4vw,2.7rem);margin-bottom:10px;}
+  .dress-body .trajefino{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--coffee);margin-bottom:22px;}
+  .dress-body p{color:var(--ink-soft);margin-bottom:16px;}
+  .swatches{display:flex;gap:22px;margin-top:28px;}
+  .swatch{display:flex;align-items:center;gap:12px;}
+  .swatch .dot{width:26px;height:26px;border-radius:50%;border:1px solid var(--line-strong);}
+  .swatch .dot.white{background:#FFFFFF;}
+  .swatch .dot.serenity{background:var(--serenity);}
+  .swatch .label{font-size:.78rem;color:var(--ink-soft);}
+  .swatch .label b{display:block;font-family:var(--serif);font-size:1.02rem;color:var(--coffee);font-weight:500;}
+
+  /* ---------- RSVP ---------- */
+  .rsvp-box{max-width:720px;margin:0 auto;}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 30px;}
+  .field{display:flex;flex-direction:column;gap:8px;}
+  .field.full{grid-column:1 / -1;}
+  .field label{font-size:.74rem;letter-spacing:.1em;color:var(--taupe);}
+  .field input, .field select, .field textarea{
+    border:none;border-bottom:1px solid var(--line-strong);background:transparent;
+    padding:10px 2px;font-family:var(--sans);font-size:1rem;color:var(--ink);
+  }
+  .field textarea{resize:vertical;min-height:70px;}
+  .field input:focus, .field select:focus, .field textarea:focus{
+    outline:none;border-color:var(--coffee);
+  }
+  .toggle-group{display:flex;gap:10px;}
+  .toggle-group button{
+    flex:1;padding:12px;border:1px solid var(--line-strong);background:transparent;
+    font-size:.82rem;letter-spacing:.05em;color:var(--ink-soft);transition:all .3s ease;
+  }
+  .toggle-group button.active{background:var(--coffee);color:var(--ivory);border-color:var(--coffee);}
+  .rsvp-submit{width:100%;margin-top:36px;padding:16px;background:var(--coffee);color:var(--ivory);
+    border:none;font-size:.82rem;letter-spacing:.18em;transition:background .3s ease;}
+  .rsvp-submit:hover{background:var(--olive);}
+  .rsvp-success{display:none;text-align:center;padding:60px 20px;}
+  .rsvp-success.show{display:block;}
+  .rsvp-success h3{font-size:1.8rem;margin-bottom:14px;}
+  .rsvp-success p{color:var(--ink-soft);}
+  .hidden-field{display:none;}
+
+  /* ---------- MOMENTOS ---------- */
+  .moments{
+    text-align:center;
+  }
+  .phrases{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:56px;}
+  .phrase{padding:0 12px;}
+  .phrase .mark{font-family:var(--serif);font-size:2.4rem;color:var(--champagne);line-height:1;}
+  .phrase p{font-family:var(--serif);font-style:italic;font-size:1.2rem;color:var(--coffee);margin-top:14px;}
+
+  /* ---------- GIFTS ---------- */
+  .gift-intro{max-width:680px;margin:0 auto 50px;text-align:center;color:var(--ink-soft);}
+  .gift-note{
+    max-width:820px;margin:0 auto 56px;padding:26px 32px;border:1px solid var(--line);
+    background:var(--paper);text-align:center;font-size:.95rem;color:var(--ink-soft);
+  }
+  .gift-controls{
+    display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:44px;
+  }
+  .gift-filters{display:flex;gap:10px;flex-wrap:wrap;}
+  .gift-filters button{
+    padding:9px 18px;border:1px solid var(--line-strong);background:transparent;
+    font-size:.76rem;letter-spacing:.06em;color:var(--ink-soft);transition:all .3s ease;
+  }
+  .gift-filters button.active{background:var(--coffee);border-color:var(--coffee);color:var(--ivory);}
+  .gift-search{
+    border:none;border-bottom:1px solid var(--line-strong);background:transparent;
+    padding:9px 4px;font-family:var(--sans);font-size:.92rem;min-width:220px;
+  }
+  .gift-search:focus{outline:none;border-color:var(--coffee);}
+
+  .gift-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;}
+  .gift-card{
+    border:1px solid var(--line);background:var(--ivory);
+    display:flex;flex-direction:column;transition:transform .4s ease, box-shadow .4s ease;
+  }
+  .gift-card:hover{transform:translateY(-4px) translateZ(0);}
+  .gift-media{height:170px;overflow:hidden;position:relative;}
+  .gift-media img{width:100%;height:100%;object-fit:cover;filter:sepia(.05) saturate(.95) contrast(1.06);transition:transform .6s ease;}
+  .gift-card:hover .gift-media img{transform:scale(1.045);}
+  .gift-body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1;}
+  .gift-cat{font-size:.64rem;letter-spacing:.16em;color:var(--taupe);margin-bottom:8px;}
+  .gift-name{font-family:var(--serif);font-size:1.18rem;color:var(--coffee);font-weight:500;margin-bottom:8px;}
+  .gift-desc{font-size:.86rem;color:var(--ink-soft);flex:1;margin-bottom:16px;}
+  .gift-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+  .gift-price{font-family:var(--serif);font-size:1.15rem;color:var(--coffee);}
+  .gift-btn{
+    padding:8px 16px;border:1px solid var(--coffee);font-size:.7rem;letter-spacing:.08em;
+    color:var(--coffee);background:transparent;transition:all .3s ease;
+  }
+  .gift-btn:hover{background:var(--coffee);color:var(--ivory);}
+  .gift-empty{text-align:center;color:var(--ink-soft);padding:60px 0;display:none;}
+  .gift-more{display:block;margin:52px auto 0;}
+
+  /* Modal */
+  .modal-overlay{
+    position:fixed;inset:0;background:rgba(42,36,30,.55);z-index:1400;
+    display:flex;align-items:center;justify-content:center;padding:20px;
+    opacity:0;pointer-events:none;transition:opacity .35s ease;
+  }
+  .modal-overlay.open{opacity:1;pointer-events:auto;}
+  .modal-box{
+    background:var(--ivory);max-width:480px;width:100%;padding:44px 40px;position:relative;
+    transform:translateY(16px);transition:transform .35s ease;
+  }
+  .modal-overlay.open .modal-box{transform:translateY(0);}
+  .modal-close{position:absolute;top:16px;right:20px;background:none;border:none;font-size:1.4rem;color:var(--taupe);}
+  .modal-box h3{font-size:1.5rem;margin-bottom:6px;}
+  .modal-box .modal-price{font-family:var(--serif);font-size:1.3rem;color:var(--taupe);margin-bottom:20px;}
+  .modal-box p{color:var(--ink-soft);font-size:.92rem;margin-bottom:14px;}
+  .modal-box .checkout-note{
+    margin-top:20px;padding:16px 18px;background:var(--paper);border:1px dashed var(--line-strong);
+    font-size:.8rem;color:var(--ink-soft);
+  }
+  .modal-actions{display:flex;gap:12px;margin-top:26px;}
+  .modal-actions .btn{margin-top:0;flex:1;text-align:center;}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--coffee);color:var(--ivory);text-align:center;padding:70px 0 40px;
+  }
+  footer .foot-names{font-family:var(--serif);font-size:2.1rem;letter-spacing:.04em;}
+  footer .foot-date{margin-top:10px;font-size:.85rem;letter-spacing:.28em;color:var(--champagne);}
+  footer .rule{background:rgba(251,248,242,.3);}
+  footer .foot-msg{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:rgba(251,248,242,.85);}
+  footer .to-top{
+    display:inline-block;margin-top:34px;font-size:.7rem;letter-spacing:.16em;color:rgba(251,248,242,.6);
+    border-bottom:1px solid rgba(251,248,242,.3);padding-bottom:3px;
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:980px){
+    .nav-links, .nav-cta{display:none;}
+    .burger{display:flex;}
+    .story-grid, .dress{grid-template-columns:1fr;gap:40px;}
+    .story-photo img, .dress-photo img{height:380px;}
+    .split{grid-template-columns:1fr;}
+    .split-media{min-height:320px;}
+    .split-body{padding:48px 34px;}
+    .manual-grid{grid-template-columns:repeat(2,1fr);}
+    .gift-grid{grid-template-columns:repeat(2,1fr);}
+    .phrases{grid-template-columns:1fr;gap:34px;}
+    section{padding:84px 0;}
+  }
+  @media (max-width:600px){
+    .wrap{padding:0 22px;}
+    .form-grid{grid-template-columns:1fr;}
+    .manual-grid{grid-template-columns:1fr;}
+    .gift-grid{grid-template-columns:1fr 1fr;gap:16px;}
+    .gift-controls{flex-direction:column;align-items:stretch;}
+    .gift-search{width:100%;}
+    .countdown-grid{gap:14px;}
+    .countdown-sep{display:none;}
+    .story-photo::after{display:none;}
+  }
+  @media (max-width:420px){
+    .gift-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="site-nav" id="siteNav">
+  <div class="wrap">
+    <a href="#home" class="nav-mark">R &amp; O</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#historia">Nossa História</a></li>
+        <li><a href="#cerimonia">Cerimônia</a></li>
+        <li><a href="#recepcao">Recepção</a></li>
+        <li><a href="#manual">Convidados</a></li>
+        <li><a href="#presentes">Presentes</a></li>
+      </ul>
+    </nav>
+    <a href="#rsvp" class="nav-cta">Confirmar Presença</a>
+    <button class="burger" id="burgerBtn" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Fechar menu">&times;</button>
+  <a href="#home">Início</a>
+  <a href="#historia">Nossa História</a>
+  <a href="#cerimonia">Cerimônia</a>
+  <a href="#recepcao">Recepção</a>
+  <a href="#manual">Manual do Convidado</a>
+  <a href="#presentes">Presentes</a>
+  <a href="#rsvp">Confirmar Presença</a>
+</div>
+
+<!-- ================= HERO =================
+     Para trocar: os nomes (h1), a data (hero-date), a frase de abertura
+     (hero-quote) e a foto de fundo (troque a URL dentro de "background-image"
+     na classe .hero-bg, lá em cima no <style>).
+================= -->
+<section class="hero" id="home" style="padding:0;">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">NÓS VAMOS NOS CASAR</div>
+    <h1 class="hero-names">Roberta<span class="hero-amp">&amp;</span>Otávio</h1>
+    <div class="hero-date">20 · 11 · 2026</div>
+    <p class="hero-quote">"Tudo começou de um jeito simples — e se tornou o início de uma história para a vida inteira."</p>
+  </div>
+  <div class="hero-scroll"><div class="line"></div></div>
+</section>
+
+<!-- ================= COUNTDOWN ================= -->
+<div class="countdown-strip">
+  <div class="wrap countdown-grid" id="countdown">
+    <div class="countdown-item"><div class="countdown-num" id="cd-days">00</div><div class="countdown-label">dias</div></div>
+    <div class="countdown-sep">·</div>
+    <div class="countdown-item"><div class="countdown-num" id="cd-hours">00</div><div class="countdown-label">horas</div></div>
+    <div class="countdown-sep">·</div>
+    <div class="countdown-item"><div class="countdown-num" id="cd-min">00</div><div class="countdown-label">minutos</div></div>
+    <div class="countdown-sep">·</div>
+    <div class="countdown-item"><div class="countdown-num" id="cd-sec">00</div><div class="countdown-label">segundos</div></div>
+  </div>
+</div>
+
+<!-- ================= NOSSA HISTÓRIA =================
+     Para trocar: o texto dentro dos <p>, e as fotos (troque as URLs
+     dentro de cada <img src="...">).
+================= -->
+<section id="historia">
+  <div class="wrap story-grid">
+    <div class="story-photo reveal">
+      <!-- Se tiverem uma foto em melhor qualidade, é só trocar o link do "src"
+           abaixo pelo link direto de uma foto de vocês (hospedada, por exemplo,
+           no Google Drive/Imgur com link público, ou depois de subir o site
+           para o ar, use o caminho do arquivo de imagem no próprio servidor). -->
+      <img src="https://cdn-assets-legacy.casar.com/thumb/autoxautox1xx63,168,708,708/dados/sitenoivos/wed1568963/paginas/qU0Xs_1786988911.jpeg" alt="Roberta e Otávio">
+    </div>
+    <div class="story-text reveal">
+      <div class="kicker">NOSSA HISTÓRIA</div>
+      <h2>O começo de tudo</h2>
+      <p>Tudo começou de um jeito simples, sem que a gente imaginasse que aquele encontro seria o início de uma história para a vida inteira.</p>
+      <p>Ao longo dos anos, crescemos juntos, dividimos sonhos e atravessamos desafios lado a lado. Colecionamos momentos inesquecíveis e aprendemos, aos poucos, que o amor mora também nas pequenas coisas — no companheirismo do dia a dia, nas risadas sem motivo, nos planos para o futuro e na escolha diária de estar um ao lado do outro.</p>
+      <p>Agora, cercados pelas pessoas que amamos, vamos celebrar não apenas o nosso "sim", mas toda a trajetória que nos trouxe até aqui — e o começo de tudo o que ainda vamos viver.</p>
+      <div class="story-strip">
+        <img src="https://cdn-assets-legacy.casar.com/thumb/autoxautox1xx0,399,854,480/dados/sitenoivos/wed1568963/sliders/O5kWU_1786990000.jpeg" alt="">
+        <img src="https://cdn-assets-legacy.casar.com/thumb/autoxautox1xx0,349,854,480/dados/sitenoivos/wed1568963/sliders/19tcX_1786990031.jpeg" alt="">
+        <img src="https://cdn-assets-legacy.casar.com/thumb/autoxautox1xx0,329,854,480/dados/sitenoivos/wed1568963/sliders/Wu9dG_1786990065.jpeg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CERIMÔNIA =================
+     Para trocar: data/horário/local (dentro de .info-block), o endereço
+     no link "COMO CHEGAR", e o mapa (o iframe usa o endereço do Google Maps).
+================= -->
+<section class="alt" id="cerimonia">
+  <div class="wrap">
+    <div class="split reveal">
+      <div class="split-media">
+        <img src="https://cdn-assets-legacy.casar.com/dados/sitenoivos/wed1568963/paginas/uk9IT_1786990491.jpeg" alt="Espaço Seribeli">
+      </div>
+      <div class="split-body">
+        <div class="kicker">A CERIMÔNIA</div>
+        <h2>O início do nosso para sempre</h2>
+        <p>Nossa cerimônia foi cuidadosamente pensada para refletir a essência do nosso compromisso. Optamos por uma celebração exclusivamente civil, sem ritos religiosos, pautada no amor e no respeito que cultivamos ao longo da nossa trajetória.</p>
+        <p>Será um momento solene e muito especial, em que oficializaremos nossa união e teremos a oportunidade de compartilhar um pouco da nossa história — relembrando os passos que nos trouxeram até aqui e os sonhos que seguiremos construindo juntos. A cerimônia será breve e pontual, e será uma alegria ter cada um de vocês ao nosso lado.</p>
+        <div class="info-block">
+          <div class="info-row"><span class="k">DATA</span><span class="v">20 de novembro de 2026</span></div>
+          <div class="info-row"><span class="k">HORÁRIO</span><span class="v">17:00</span></div>
+          <div class="info-row"><span class="k">LOCAL</span><span class="v">Espaço Seribeli</span></div>
+          <div class="info-row"><span class="k">ENDEREÇO</span><span class="v" style="font-size:1.02rem;">Av. Nilcéia Maria Scardazzi Silva, 230 — Presidente Prudente, SP</span></div>
+        </div>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Espa%C3%A7o+Seribeli%2C+Av.+Nilc%C3%A9ia+Maria+Scardazzi+Silva%2C+230%2C+Presidente+Prudente+-+SP" target="_blank" rel="noopener">COMO CHEGAR</a>
+      </div>
+    </div>
+    <div class="map-embed reveal">
+      <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDF4VgbU9xWjttw7ebXRURtpNvvPpIB_eM&q=place_id:ChIJwTzRY4Dzk5QRUKyjLfmkgQA" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RECEPÇÃO =================
+     Para trocar: o texto dentro dos <p> e a foto (URL do <img>).
+================= -->
+<section id="recepcao">
+  <div class="wrap">
+    <div class="split reverse reveal">
+      <div class="split-media">
+        <img src="https://cdn-assets-legacy.casar.com/dados/sitenoivos/wed1568963/paginas/fYM6U_1786993140.jpeg" alt="Recepção">
+      </div>
+      <div class="split-body">
+        <div class="kicker">A RECEPÇÃO</div>
+        <h2>A festa, depois do sim</h2>
+        <p>Após a cerimônia, ficaremos muito honrados em recebê-los para celebrar este novo e tão aguardado capítulo de nossas vidas.</p>
+        <p>A recepção terá início com um jantar, para que possamos compartilhar bons momentos e criar novas memórias — cada detalhe da noite foi pensado com carinho, desde a gastronomia até a carta de drinks. Logo em seguida, a noite seguirá com muita música e animação na pista de dança.</p>
+        <p>Preparem-se para brindar, celebrar e construir memórias inesquecíveis conosco.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MANUAL DO CONVIDADO ================= -->
+<section class="alt" id="manual">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-date">PARA TORNAR ESSE DIA AINDA MAIS ESPECIAL</div>
+      <h2>Manual do Convidado</h2>
+      <p>Reunimos aqui alguns cuidados simples que nos ajudam a viver esse dia com toda a tranquilidade que ele merece.</p>
+    </div>
+    <div class="manual-grid reveal">
+      <div class="manual-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        <h3>Confirme sua presença</h3>
+        <p>Sua confirmação é essencial para a organização e para a excelência do nosso evento.</p>
+      </div>
+      <div class="manual-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+        <h3>Celular no silencioso</h3>
+        <p>Para não interromper a cerimônia, pedimos que o celular fique no silencioso.</p>
+      </div>
+      <div class="manual-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <h3>Nossa lista é restrita</h3>
+        <p>Foi elaborada com muito carinho — pedimos para não convidar outras pessoas.</p>
+      </div>
+      <div class="manual-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></svg>
+        <h3>Cuidado com os fotógrafos</h3>
+        <p>Evite interferir nas fotos oficiais — assim garantimos os melhores registros do dia.</p>
+      </div>
+      <div class="manual-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <h3>Seja pontual</h3>
+        <p>Respeite o horário de início — a cerimônia será breve e começará no horário marcado.</p>
+      </div>
+      <div class="manual-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z"/></svg>
+        <h3>Viva a cerimônia</h3>
+        <p>Desconecte-se por alguns minutos para sentir essa emoção com a gente.</p>
+      </div>
+      <div class="manual-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10l-1 9a4 4 0 0 1-8 0Z"/></svg>
+        <h3>Se beber, não dirija</h3>
+        <p>Planeje o seu transporte com antecedência e aproveite a festa com tranquilidade.</p>
+      </div>
+      <div class="manual-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M4.9 4.9l14.2 14.2"/></svg>
+        <h3>Evite o branco e o azul serenity</h3>
+        <p>O branco é de uso exclusivo da noiva; o azul serenity foi reservado às madrinhas.</p>
+      </div>
+      <div class="manual-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c3-6 7-9 10-9s7 3 10 9c-3 6-7 9-10 9s-7-3-10-9Z"/><circle cx="12" cy="12" r="3"/></svg>
+        <h3>Aproveite muito</h3>
+        <p>Divirta-se, dance e celebre cada instante — esse dia é para ser vivido com alegria.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DRESS CODE =================
+     Para trocar: o traje (dentro de .trajefino) e o texto explicativo.
+================= -->
+<section id="dresscode">
+  <div class="wrap dress">
+    <div class="dress-photo reveal">
+      <img src="https://cdn-assets-legacy.casar.com/dados/sitenoivos/wed1568963/paginas/Cix2p_1786998801.jpeg" alt="Dress code">
+    </div>
+    <div class="dress-body reveal">
+      <div class="kicker">DRESS CODE</div>
+      <h2>Traje</h2>
+      <div class="trajefino">Esporte Fino</div>
+      <p>Queremos que vocês aproveitem a nossa celebração com sofisticação, mas sem a exigência de tanta formalidade. Para manter a harmonia visual do dia, pedimos a gentileza de observar duas cores reservadas.</p>
+      <div class="swatches">
+        <div class="swatch"><span class="dot white"></span><span class="label"><b>Branco</b>uso exclusivo da noiva</span></div>
+        <div class="swatch"><span class="dot serenity"></span><span class="label"><b>Azul Serenity</b>reservado às madrinhas</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MOMENTOS ESPECIAIS ================= -->
+<section class="alt moments">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-date">ENQUANTO ESPERAMOS PELO GRANDE DIA</div>
+      <h2>A expectativa faz parte da festa</h2>
+    </div>
+    <div class="phrases reveal">
+      <div class="phrase"><div class="mark">"</div><p>Cada dia que passa é um dia mais perto de dizer sim.</p></div>
+      <div class="phrase"><div class="mark">"</div><p>A espera também é uma forma bonita de celebrar.</p></div>
+      <div class="phrase"><div class="mark">"</div><p>Estamos ansiosos para viver esse dia ao lado de vocês.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RSVP ================= -->
+<section id="rsvp">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-date">SUA PRESENÇA</div>
+      <h2>Confirme sua presença</h2>
+      <p>Sua presença é muito importante para nós e fará parte das memórias que vamos guardar para sempre.</p>
+    </div>
+    <div class="rsvp-box reveal">
+      <form id="rsvpForm">
+        <div class="form-grid">
+          <div class="field full">
+            <label>NOME COMPLETO</label>
+            <input type="text" name="nome" required>
+          </div>
+
+          <div class="field full">
+            <label>VOCÊ IRÁ AO NOSSO CASAMENTO?</label>
+            <div class="toggle-group">
+              <button type="button" class="rsvp-toggle active" data-val="sim">Sim, estarei lá</button>
+              <button type="button" class="rsvp-toggle" data-val="nao">Não poderei ir</button>
+            </div>
+            <input type="hidden" name="confirmacao" id="confirmacaoInput" value="sim">
+          </div>
+
+          <div class="field">
+            <label>ADULTOS (INCLUINDO VOCÊ)</label>
+            <input type="number" name="adultos" min="1" value="1">
+          </div>
+          <div class="field">
+            <label>NOME DO ACOMPANHANTE</label>
+            <input type="text" name="acompanhante">
+          </div>
+
+          <div class="field">
+            <label>CRIANÇAS</label>
+            <input type="number" name="criancas" min="0" value="0">
+          </div>
+          <div class="field">
+            <label>NOME DAS CRIANÇAS</label>
+            <input type="text" name="nomeCriancas">
+          </div>
+
+          <div class="field">
+            <label>E-MAIL</label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="field">
+            <label>TELEFONE</label>
+            <input type="tel" name="telefone">
+          </div>
+
+          <div class="field full">
+            <label>OBSERVAÇÕES</label>
+            <textarea name="observacoes" placeholder="Restrições alimentares, alergias ou algo que queira nos contar."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="rsvp-submit">CONFIRMAR PRESENÇA</button>
+      </form>
+      <div class="rsvp-success" id="rsvpSuccess">
+        <h3>Obrigado, <span id="successName">amigo(a)</span>!</h3>
+        <p>Recebemos sua confirmação com muito carinho. Mal podemos esperar para celebrar esse dia ao seu lado.</p>
+        <p style="margin-top:26px;font-family:var(--serif);font-style:italic;color:var(--coffee);">Com amor, Roberta &amp; Otávio</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LISTA DE PRESENTES ================= -->
+<section class="alt" id="presentes">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-date">LISTA DE CASAMENTO</div>
+      <h2>Lista de Presentes</h2>
+    </div>
+    <p class="gift-intro reveal">Para quem deseja nos presentear, preparamos uma lista com muito carinho, pensando no início dessa nova fase da nossa vida juntos.</p>
+
+    <div class="gift-controls reveal">
+      <div class="gift-filters" id="giftFilters">
+        <button class="active" data-filter="todos">Todos</button>
+        <button data-filter="casa">Casa</button>
+        <button data-filter="luademel">Lua de Mel</button>
+        <button data-filter="experiencias">Experiências</button>
+        <button data-filter="mimos">Mimos</button>
+        <button data-filter="vidaadois">Vida a Dois</button>
+        <button data-filter="grandes">Grandes Presentes</button>
+      </div>
+      <input type="text" class="gift-search" id="giftSearch" placeholder="Buscar presente...">
+    </div>
+
+    <div class="gift-grid" id="giftGrid"></div>
+    <p class="gift-empty" id="giftEmpty">Nenhum presente encontrado com esses filtros.</p>
+    <button class="btn gift-more" id="giftMore">VER MAIS PRESENTES</button>
+  </div>
+</section>
+
+<!-- Modal de presente -->
+<div class="modal-overlay" id="giftModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <div class="section-date" id="modalCat" style="margin-bottom:14px;"></div>
+    <h3 id="modalName"></h3>
+    <div class="modal-price" id="modalPrice"></div>
+    <p id="modalDesc"></p>
+    <p>Ao confirmar, você estará presenteando Roberta &amp; Otávio com muito carinho para essa nova fase.</p>
+    <div class="checkout-note">
+      Ambiente de exemplo — esta área está pronta para receber a integração com o meio de pagamento definido pelos noivos (Pix, cartão ou link de pagamento).
+    </div>
+    <div class="modal-actions">
+      <button class="btn solid" id="modalConfirm">PRESENTEAR</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-names">Roberta &amp; Otávio</div>
+    <div class="foot-date">20 . 11 . 2026</div>
+    <div class="rule"></div>
+    <p class="foot-msg">Com amor, Roberta &amp; Otávio</p>
+    <a href="#home" class="to-top">VOLTAR AO TOPO</a>
+  </div>
+</footer>
+
+<script>
+// ===================== NAV =====================
+const siteNav = document.getElementById('siteNav');
+window.addEventListener('scroll', () => {
+  siteNav.classList.toggle('solid', window.scrollY > 60);
+});
+
+const burgerBtn = document.getElementById('burgerBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileClose = document.getElementById('mobileClose');
+burgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+// ===================== REVEAL ON SCROLL =====================
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+revealEls.forEach(el => io.observe(el));
+
+// ===================== COUNTDOWN =====================
+// Data e horário do casamento usados na contagem regressiva.
+// Formato: 'AAAA-MM-DDTHH:MM:SS-03:00' (não mude o "-03:00", é o fuso de Brasília).
+const weddingDate = new Date('2026-11-20T17:00:00-03:00').getTime();
+function updateCountdown(){
+  const now = new Date().getTime();
+  const diff = weddingDate - now;
+  const els = {
+    d: document.getElementById('cd-days'),
+    h: document.getElementById('cd-hours'),
+    m: document.getElementById('cd-min'),
+    s: document.getElementById('cd-sec'),
+  };
+  if (diff <= 0){
+    els.d.textContent = '00'; els.h.textContent = '00'; els.m.textContent = '00'; els.s.textContent = '00';
+    return;
+  }
+  const days = Math.floor(diff / (1000*60*60*24));
+  const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+  const mins = Math.floor((diff % (1000*60*60)) / (1000*60));
+  const secs = Math.floor((diff % (1000*60)) / 1000);
+  els.d.textContent = String(days).padStart(2,'0');
+  els.h.textContent = String(hours).padStart(2,'0');
+  els.m.textContent = String(mins).padStart(2,'0');
+  els.s.textContent = String(secs).padStart(2,'0');
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+// ===================== RSVP FORM =====================
+const toggles = document.querySelectorAll('.rsvp-toggle');
+const confirmacaoInput = document.getElementById('confirmacaoInput');
+toggles.forEach(btn => {
+  btn.addEventListener('click', () => {
+    toggles.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    confirmacaoInput.value = btn.dataset.val;
+  });
+});
+
+const rsvpForm = document.getElementById('rsvpForm');
+const rsvpSuccess = document.getElementById('rsvpSuccess');
+rsvpForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const data = new FormData(rsvpForm);
+  const nome = (data.get('nome') || '').toString().trim().split(' ')[0] || 'amigo(a)';
+  document.getElementById('successName').textContent = nome;
+  rsvpForm.style.display = 'none';
+  rsvpSuccess.classList.add('show');
+  // Estrutura pronta para integração: os dados do FormData podem ser
+  // enviados para um endpoint / planilha / e-mail configurado pelos noivos.
+});
+
+// ===================== GIFTS =====================
+// =====================================================================
+// LISTA DE PRESENTES — EDITE AQUI
+// =====================================================================
+// Cada presente é uma linha no formato:
+//   {c:'categoria', n:'Nome do presente', d:'Descrição curta.', p:preço, k:'palavras-chave-da-foto'}
+//
+// c (categoria) — use exatamente uma destas palavras:
+//   casa | luademel | experiencias | mimos | vidaadois | grandes
+//
+// n (nome) — o nome do presente, entre aspas simples.
+// d (descrição) — uma frase curta, entre aspas simples.
+// p (preço) — o valor em reais, sem "R$" e sem pontos (ex: 450, não 450.00).
+// k (palavras-chave) — 1 ou 2 palavras EM INGLÊS, separadas por vírgula,
+//   usadas para buscar automaticamente uma foto condizente com o presente
+//   (ex: 'coffeemaker,kitchen' para uma cafeteira). Sem espaços dentro da palavra.
+//
+// PARA ADICIONAR UM PRESENTE: copie uma linha inteira (do { até a }),
+// cole no final da lista, e edite os valores. Não esqueça a vírgula no
+// final de cada linha, EXCETO na última linha antes do ] de fechamento.
+//
+// PARA REMOVER UM PRESENTE: apague a linha inteira (do { até a },).
+//
+// PARA EDITAR UM PRESENTE: só troque o texto ou o número dentro das aspas.
+//
+// Depois de editar, salve o arquivo (Ctrl+S) e atualize a página no navegador.
+// =====================================================================
+const gifts = [
+{c:'casa',n:'Toalhas de Rosto Bordadas',d:'Detalhe delicado para o banheiro do casal.',p:251,k:'towels,embroidery'},
+{c:'casa',n:'Tapete para a Sala',d:'Conforto e charme para o ambiente principal da casa.',p:284,k:'rug,livingroom'},
+{c:'casa',n:'Aparelho de Jantar Completo',d:'Peça central da mesa posta da casa nova.',p:267,k:'dinnerware,tableset'},
+{c:'casa',n:'Chaleira Elétrica Inox',d:'Detalhe simples que vira ritual diário.',p:203,k:'kettle,steel'},
+{c:'casa',n:'Panela de Ferro Fundido',d:'Durabilidade e sabor para os pratos especiais da casa.',p:193,k:'castiron,skillet'},
+{c:'casa',n:'Jogo de Taças de Cristal',d:'Para os brindes que ainda vamos comemorar juntos.',p:254,k:'crystal,wineglass'},
+{c:'casa',n:'Espelho Decorativo',d:'Peça de destaque para a sala ou o quarto.',p:253,k:'mirror,decor'},
+{c:'casa',n:'Air Fryer Família',d:'Praticidade para o dia a dia da nova cozinha.',p:261,k:'airfryer,kitchen'},
+{c:'casa',n:'Faqueiro Completo Inox',d:'Conjunto elegante para refeições em família.',p:204,k:'cutlery,silverware'},
+{c:'casa',n:'Jogo de Copos Sofisticado',d:'Complemento perfeito para a nova adega do casal.',p:227,k:'glassware,drinkware'},
+{c:'casa',n:'Jantar Especial em Casa',d:'Uma noite só dos dois, com direito a mesa posta caprichada.',p:192,k:'candlelight,dinnertable'},
+{c:'casa',n:'Jogo de Cama Premium',d:'Lençóis de algodão egípcio para noites tranquilas na casa nova.',p:250,k:'bedding,bedroom'},
+{c:'casa',n:'Luminária de Mesa',d:'Um ponto de luz especial para o cantinho de leitura.',p:482,k:'lamp,desk'},
+{c:'casa',n:'Conjunto de Panelas Antiaderentes',d:'O ponto de partida da cozinha do casal.',p:316,k:'cookware,pots'},
+{c:'casa',n:'Adega Climatizada',d:'Para guardar bem os vinhos preferidos do casal.',p:444,k:'winecellar,wine'},
+{c:'casa',n:'Cafeteira Especial',d:'Para começar bem cada manhã em casa.',p:315,k:'coffeemaker,kitchen'},
+{c:'casa',n:'Batedeira Planetária',d:'Para os bolos e receitas especiais de fim de semana.',p:458,k:'mixer,baking'},
+{c:'casa',n:'Conjunto de Vasos Decorativos',d:'Para trazer um pouco de verde para casa.',p:352,k:'vase,decor'},
+{c:'casa',n:'Organizadores para Armário',d:'Para manter a casa nova sempre em ordem.',p:427,k:'closet,organizer'},
+{c:'casa',n:'Aspirador de Pó Vertical',d:'Facilita a rotina de cuidar da casa nova.',p:474,k:'vacuum,cleaning'},
+{c:'casa',n:'Panela Elétrica de Arroz',d:'Praticidade para o dia a dia da casa nova.',p:436,k:'ricecooker,kitchen'},
+{c:'casa',n:'Quadro Decorativo Autoral',d:'Detalhe de personalidade para as paredes da casa nova.',p:409,k:'artwork,wallart'},
+{c:'casa',n:'Jogo Americano Artesanal',d:'Detalhe de bom gosto para o dia a dia à mesa.',p:498,k:'placemat,table'},
+{c:'casa',n:'Ferro de Passar a Vapor',d:'Cuidado prático com o guarda-roupa da casa.',p:380,k:'iron,laundry'},
+{c:'casa',n:'Kit Churrasco Completo',d:'Para os fins de semana reunindo a família em casa.',p:419,k:'barbecue,grill'},
+{c:'casa',n:'Travessas Decorativas',d:'Para servir com estilo nos almoços de domingo.',p:449,k:'serving,platter'},
+{c:'casa',n:'Edredom Casal King',d:'Conforto e leveza para os dias mais frios em casa.',p:732,k:'duvet,bed'},
+{c:'casa',n:'Jogo de Toalhas de Banho',d:'Toalhas macias e absorventes para o novo banheiro do casal.',p:685,k:'towels,bathroom'},
+{c:'casa',n:'Almofadas para a Sala',d:'Conforto e cor para as tardes em casa.',p:653,k:'pillow,sofa'},
+{c:'casa',n:'Frigideira Profissional',d:'Para os primeiros cafés da manhã preparados juntos.',p:627,k:'frypan,kitchen'},
+{c:'casa',n:'Luminária de Piso',d:'Um ponto de luz aconchegante para a sala.',p:592,k:'floorlamp,livingroom'},
+{c:'casa',n:'Cesto Organizador para Roupas',d:'Praticidade e organização para o dia a dia.',p:624,k:'basket,laundry'},
+{c:'casa',n:'Sanduicheira e Grill',d:'Praticidade para os lanches rápidos do dia a dia.',p:541,k:'grill,kitchen'},
+{c:'casa',n:'Toalhas de Mesa Bordadas',d:'Peça especial para receber a família em casa.',p:794,k:'tablecloth,dining'},
+{c:'casa',n:'Manta para o Sofá',d:'Um toque aconchegante para as noites de filme.',p:1107,k:'throw,sofa'},
+{c:'casa',n:'Jogo de Lençóis Percal 400 Fios',d:'Textura fina e durável para o quarto do casal.',p:1337,k:'linen,bedsheets'},
+{c:'casa',n:'Cobertor de Inverno',d:'Aconchego extra para as noites mais frias em casa.',p:1306,k:'blanket,cozy'},
+{c:'casa',n:'Robô Aspirador Inteligente',d:'Um upgrade e tanto para o dia a dia do casal.',p:1151,k:'robotvacuum,home'},
+{c:'casa',n:'Jogo de Pratos de Porcelana',d:'Base para os primeiros jantares em casa.',p:1259,k:'porcelain,plates'},
+{c:'casa',n:'Liquidificador Potente',d:'Aliado das receitas de fim de semana.',p:1094,k:'blender,kitchen'},
+{c:'mimos',n:'Assinatura de Vinhos por 6 Meses',d:'Uma garrafa nova para descobrir a cada mês.',p:201,k:'wine,bottle'},
+{c:'mimos',n:'Estoque de Chocolate Selecionado',d:'Um mimo doce para os dias corridos.',p:276,k:'chocolate,gourmet'},
+{c:'mimos',n:'Kit Chá da Tarde',d:'Para os domingos mais tranquilos em casa.',p:223,k:'tea,afternoon'},
+{c:'mimos',n:'Kit Café Especial',d:'Grãos selecionados para começar bem o dia.',p:338,k:'coffee,beans'},
+{c:'mimos',n:'Um Jantar sem Precisar Cozinhar',d:'Uma noite de descanso para os dois.',p:425,k:'restaurant,dinner'},
+{c:'luademel',n:'Jantar à Luz de Velas',d:'Um momento intimista durante a viagem.',p:754,k:'candlelight,dinner'},
+{c:'luademel',n:'Jantar com Vista Panorâmica',d:'Uma noite especial em um lugar memorável.',p:796,k:'view,restaurant'},
+{c:'luademel',n:'Café da Manhã Especial na Viagem',d:'Para começar bem os dias da lua de mel.',p:1267,k:'breakfast,hotel'},
+{c:'luademel',n:'Diária em Hotel Especial',d:'Uma noite a mais de conforto durante a viagem.',p:870,k:'hotel,resort'},
+{c:'luademel',n:'Massagem para Dois',d:'Um respiro de cuidado durante a viagem.',p:895,k:'massage,spa'},
+{c:'luademel',n:'Passeio de Barco a Dois',d:'Uma tarde inteira navegando, só para os dois.',p:2467,k:'boat,sea'},
+{c:'luademel',n:'Passeio Turístico Guiado',d:'Para conhecer um pouco mais do destino escolhido.',p:1776,k:'travel,tour'},
+{c:'luademel',n:'Spa a Dois',d:'Um momento de relaxamento completo para o casal.',p:1985,k:'spa,couple'},
+{c:'luademel',n:'Jantar Romântico à Beira-mar',d:'Uma noite especial com vista para o mar.',p:2213,k:'beach,dinner'},
+{c:'luademel',n:'Dia de Praia Reservado',d:'Um dia inteiro só para relaxar juntos.',p:2180,k:'beach,tropical'},
+{c:'experiencias',n:'Degustação de Vinhos',d:'Uma experiência para conhecer novos rótulos a dois.',p:343,k:'winetasting,vineyard'},
+{c:'experiencias',n:'Experiência em Vinícola',d:'Um dia inteiro dedicado a bons vinhos e boa companhia.',p:456,k:'vineyard,wine'},
+{c:'experiencias',n:'Observação de Estrelas',d:'Uma noite especial sob o céu, só para os dois.',p:559,k:'stargazing,night'},
+{c:'experiencias',n:'Tour Gastronômico pela Cidade',d:'Um passeio saboreando os melhores lugares.',p:752,k:'foodtour,city'},
+{c:'experiencias',n:'Passeio de Trem Panorâmico',d:'Uma viagem curta e cheia de vistas bonitas.',p:530,k:'train,scenic'},
+{c:'experiencias',n:'Dia em um Spa Urbano',d:'Um momento de pausa na rotina, a dois.',p:611,k:'spa,wellness'},
+{c:'experiencias',n:'Jantar Harmonizado',d:'Uma experiência gastronômica cuidadosamente pensada.',p:647,k:'winepairing,dinner'},
+{c:'experiencias',n:'Sessão de Fotos do Casal',d:'Para guardar um novo momento especial em imagens.',p:566,k:'photography,couple'},
+{c:'experiencias',n:'Aula de Culinária a Dois',d:'Uma tarde diferente aprendendo a cozinhar juntos.',p:1053,k:'cooking,class'},
+{c:'experiencias',n:'Piquenique Especial',d:'Uma tarde ao ar livre, só para os dois.',p:1207,k:'picnic,outdoor'},
+{c:'experiencias',n:'Experiência em Fazenda de Café',d:'Um passeio diferente para apreciar juntos.',p:1200,k:'coffee,farm'},
+{c:'experiencias',n:'Retiro de um Dia no Campo',d:'Uma pausa tranquila fora da rotina.',p:1308,k:'countryside,retreat'},
+{c:'vidaadois',n:'Domingo Preguiçoso a Dois',d:'Um dia inteiro sem compromissos, só relaxando juntos.',p:440,k:'lazy,sunday'},
+{c:'vidaadois',n:'Uma Noite Especial Só Nossa',d:'Um tempo reservado só para os dois, sem pressa.',p:371,k:'candlelight,couple'},
+{c:'vidaadois',n:'Primeiro Jantar na Casa Nova',d:'Para celebrar a primeira noite morando juntos.',p:712,k:'dinner,newhome'},
+{c:'vidaadois',n:'Celebração da Nova Fase',d:'Um momento para brindar ao que está começando.',p:683,k:'toast,champagne'},
+{c:'vidaadois',n:'Primeiro Vinho da Casa Nova',d:'Um brinde especial para abrir essa nova fase.',p:694,k:'wine,toast'},
+{c:'vidaadois',n:'Noite de Filmes na Sala Nova',d:'A primeira sessão de cinema em casa.',p:618,k:'movienight,livingroom'},
+{c:'vidaadois',n:'Café da Manhã de Casados',d:'O primeiro café da manhã depois do grande dia.',p:954,k:'breakfast,couple'},
+{c:'vidaadois',n:'Jantar de Um Mês de Casados',d:'Para comemorar as primeiras semanas juntos.',p:884,k:'dinner,celebration'},
+{c:'grandes',n:'Passeio Exclusivo para o Casal',d:'Um roteiro reservado, pensado para os dois.',p:1512,k:'privatetour,luxury'},
+{c:'grandes',n:'Diária em Hotel Cinco Estrelas',d:'Uma noite de luxo durante a viagem do casal.',p:1996,k:'luxuryhotel,resort'},
+{c:'grandes',n:'Contribuição para a Lua de Mel',d:'Ajude a construir a viagem dos sonhos do casal.',p:3351,k:'honeymoon,travel'},
+{c:'grandes',n:'Grande Contribuição para a Casa Nova',d:'Ajude a equipar um cômodo inteiro da casa.',p:3103,k:'newhome,interior'},
+{c:'grandes',n:'Experiência Especial da Viagem',d:'Um momento memorável a mais durante a lua de mel.',p:2686,k:'luxury,travel'}
+];
+
+const catLabels = {
+  casa: 'Casa',
+  luademel: 'Lua de Mel',
+  experiencias: 'Experiências',
+  mimos: 'Mimos',
+  vidaadois: 'Vida a Dois',
+  grandes: 'Grandes Presentes'
+};
+
+function imgFor(g, idx){
+  // Usa palavras-chave específicas de cada presente para buscar uma foto condizente.
+  // O tamanho é ajustado à densidade de pixels da tela (retina) para evitar imagens pixeladas.
+  var dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+  var w = Math.round(560 * dpr);
+  var h = Math.round(420 * dpr);
+  return 'https://loremflickr.com/' + w + '/' + h + '/' + g.k + '?lock=' + (idx + 17);
+}
+
+const giftGrid = document.getElementById('giftGrid');
+const giftEmpty = document.getElementById('giftEmpty');
+const giftFilters = document.getElementById('giftFilters');
+const giftSearch = document.getElementById('giftSearch');
+const giftMoreBtn = document.getElementById('giftMore');
+
+let currentFilter = 'todos';
+let currentSearch = '';
+let visibleCount = 12;
+const PAGE_SIZE = 12;
+
+function formatPrice(p){
+  return 'R$ ' + p.toLocaleString('pt-BR');
+}
+
+function getFiltered(){
+  return gifts.filter((g, idx) => {
+    g._idx = idx;
+    const matchCat = currentFilter === 'todos' || g.c === currentFilter;
+    const matchSearch = !currentSearch || g.n.toLowerCase().includes(currentSearch) || g.d.toLowerCase().includes(currentSearch);
+    return matchCat && matchSearch;
+  });
+}
+
+function renderGifts(){
+  const filtered = getFiltered();
+  giftGrid.innerHTML = '';
+  giftEmpty.style.display = filtered.length === 0 ? 'block' : 'none';
+  const slice = filtered.slice(0, visibleCount);
+  slice.forEach((g) => {
+    const card = document.createElement('div');
+    card.className = 'gift-card';
+    card.innerHTML =
+      '<div class="gift-media"><img loading="lazy" decoding="async" src="' + imgFor(g, g._idx) + '" alt="' + g.n + '"></div>' +
+      '<div class="gift-body">' +
+        '<div class="gift-cat">' + catLabels[g.c].toUpperCase() + '</div>' +
+        '<div class="gift-name">' + g.n + '</div>' +
+        '<div class="gift-desc">' + g.d + '</div>' +
+        '<div class="gift-foot">' +
+          '<div class="gift-price">' + formatPrice(g.p) + '</div>' +
+          '<button class="gift-btn" data-idx="' + g._idx + '">Presentear</button>' +
+        '</div>' +
+      '</div>';
+    giftGrid.appendChild(card);
+  });
+  giftMoreBtn.style.display = filtered.length > visibleCount ? 'block' : 'none';
+
+  giftGrid.querySelectorAll('.gift-btn').forEach(btn => {
+    btn.addEventListener('click', () => openGiftModal(gifts[parseInt(btn.dataset.idx)]));
+  });
+}
+
+giftFilters.querySelectorAll('button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    giftFilters.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentFilter = btn.dataset.filter;
+    visibleCount = PAGE_SIZE;
+    renderGifts();
+  });
+});
+
+giftSearch.addEventListener('input', () => {
+  currentSearch = giftSearch.value.toLowerCase().trim();
+  visibleCount = PAGE_SIZE;
+  renderGifts();
+});
+
+giftMoreBtn.addEventListener('click', () => {
+  visibleCount += PAGE_SIZE;
+  renderGifts();
+});
+
+// Modal
+const giftModal = document.getElementById('giftModal');
+const modalClose = document.getElementById('modalClose');
+function openGiftModal(g){
+  document.getElementById('modalCat').textContent = catLabels[g.c].toUpperCase();
+  document.getElementById('modalName').textContent = g.n;
+  document.getElementById('modalPrice').textContent = formatPrice(g.p);
+  document.getElementById('modalDesc').textContent = g.d;
+  document.getElementById('modalConfirm').textContent = 'PRESENTEAR';
+  giftModal.classList.add('open');
+}
+modalClose.addEventListener('click', () => giftModal.classList.remove('open'));
+giftModal.addEventListener('click', (e) => { if (e.target === giftModal) giftModal.classList.remove('open'); });
+document.getElementById('modalConfirm').addEventListener('click', () => {
+  document.getElementById('modalConfirm').textContent = 'OBRIGADO! ❤';
+  setTimeout(() => giftModal.classList.remove('open'), 1400);
+});
+
+renderGifts();
+</script>
+</body>
+</html>
