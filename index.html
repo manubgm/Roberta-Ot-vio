@@ -325,8 +325,19 @@
     <p id="modalDesc"></p>
     <p>Ao confirmar, você estará presenteando Roberta &amp; Otávio com muito carinho para essa nova fase.</p>
     <div class="checkout-note">
-      Ambiente de exemplo — esta área está pronta para receber a integração com o meio de pagamento definido pelos noivos (Pix, cartão ou link de pagamento).
+      <img src="assets/qrcode_pix_casamento.jpeg" alt="QR Code Pix dos Noivos" 
+      style="width: 380px; height: 380px; border: 1px solid var(--line-strong); padding: 8px; background: #fff; border-radius: 8px;">
     </div>
+    <div style="font-size: 0.9rem; color: var(--coffee); font-weight: 500;">
+      Chave Pix:
+    </div>
+    
+    <div style="display: flex; gap: 8px; align-items: center; max-width: 420px; width: 100%;">
+      <input type="text" value="suachavepix@email.com" id="pixKeyInput" readonly style="flex: 1; text-align: center; font-size: 0.85rem; padding: 6px; border: 1px solid var(--line-strong); background: #fff;">
+      <button type="button" onclick="copiarPix()" class="btn" style="padding: 6px 12px; margin-top: 0; font-size: 0.7rem;">COPIAR</button>
+    </div>
+    <small id="copyNotice" style="color: var(--olive); display: none;">Chave copiada com sucesso!</small>
+
     <div class="modal-actions">
       <button class="btn solid" id="modalConfirm">PRESENTEAR</button>
     </div>

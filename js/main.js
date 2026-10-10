@@ -322,3 +322,22 @@ document.getElementById('modalConfirm').addEventListener('click', () => {
 });
 
 renderGifts();
+
+// ===================== COPIAR CHAVE PIX =====================
+function copiarPix() {
+  const pixInput = document.getElementById('pixKeyInput');
+  const notice = document.getElementById('copyNotice');
+
+  // Seleciona e copia o texto
+  pixInput.select();
+  pixInput.setSelectionRange(0, 99999); // Para dispositivos móveis
+
+  navigator.clipboard.writeText(pixInput.value).then(() => {
+    notice.style.display = 'block';
+    setTimeout(() => {
+      notice.style.display = 'none';
+    }, 3000);
+  }).catch(err => {
+    console.error('Erro ao copiar chave: ', err);
+  });
+}
